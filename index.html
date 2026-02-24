@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandigarh University - Student Home</title>
+    <meta name="description" content="CUIMS Student Portal - Chandigarh University Information Management System">
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header-left">
+            <button class="hamburger" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <img src="cuims-logo.png" alt="CUIMS Logo" class="cuims-logo-img">
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="search-bar">
+                <input type="text" placeholder="Search & Bookmark your page">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="icon-btn"><i class="far fa-bell"></i></button>
+            <button class="icon-btn"><i class="fas fa-th-large"></i></button>
+            <button class="icon-btn"><i class="far fa-heart"></i></button>
+            <button class="icon-btn"><i class="fas fa-cog"></i></button>
+            <div class="user-profile">
+                <div class="user-info">
+                    <span class="user-name">MUKTI</span>
+                    <span class="user-id">23BAS10073</span>
+                </div>
+                <div class="user-avatar">
+                    <img src="profile-pic.jpg" alt="User Profile Picture">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN WRAPPER ===== -->
+    <div class="main-wrapper">
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item">Academics <i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-item">Accounts <i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-item">Administration <i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-item">Apply for Loan Documents</a>
+                <a href="#" class="nav-item">Apply for NOC</a>
+                <a href="#" class="nav-item">Centre for Student Wellbeing (CSW) <i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-item">Counseling Therapy Clinic Registration</a>
+                <a href="#" class="nav-item">DCPD</a>
+                <a href="#" class="nav-item">DLL MOOC Coordinator List</a>
+                <a href="#" class="nav-item">E Library</a>
+                <a href="#" class="nav-item">Examination <i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-item">Feedback related to the Teaching and Learning Process</a>
+                <a href="#" class="nav-item">Hostel <i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-item">International Study Opportunities</a>
+                <a href="#" class="nav-item">Library <i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-item">My Profile</a>
+                <a href="#" class="nav-item">Online Test</a>
+                <a href="#" class="nav-item">PhD</a>
+                <a href="#" class="nav-item">Student Leave Application <i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-item">Student Relation Management System <i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-item">TPP UILAH</a>
+                <a href="#" class="nav-item">Transport <i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-item">UCMC</a>
+            </nav>
+        </aside>
+
+        <!-- ===== CONTENT AREA ===== -->
+        <main class="content">
+
+            <!-- Quick Link Cards -->
+            <div class="quick-links">
+                <div class="quick-card">
+                    <div class="quick-card-text">
+                        <h4>Important Links</h4>
+                        <p>CLICK HERE</p>
+                    </div>
+                    <div class="quick-card-icon green">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="quick-card">
+                    <div class="quick-card-text">
+                        <h4>Student Facilitation</h4>
+                        <p>CLICK TO VIEW</p>
+                    </div>
+                    <div class="quick-card-icon orange">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                </div>
+                <div class="quick-card">
+                    <div class="quick-card-text">
+                        <h4>Anti Ragging</h4>
+                        <p>READ NOW</p>
+                    </div>
+                    <div class="quick-card-icon gray">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                </div>
+                <div class="quick-card cu-lms">
+                    <div class="quick-card-text">
+                        <h4>CU LMS</h4>
+                        <p>CLICK HERE</p>
+                    </div>
+                    <div class="quick-card-icon teal">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+                <div class="quick-card">
+                    <div class="quick-card-text">
+                        <h4>My University Email</h4>
+                        <p>VIEW DETAILS</p>
+                    </div>
+                    <div class="quick-card-icon blue">
+                        <i class="fas fa-envelope-open"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather Bar -->
+            <div class="weather-bar">
+                <div class="weather-left">
+                    <span class="weather-uni">CHANDIGARH UNIVERSITY<br><span
+                            style="font-size: 10px; opacity: 0.8; font-weight: 500;">WEATHER</span></span>
+                    <div class="weather-info">
+                        <i class="fas fa-cloud-moon weather-icon"></i>
+                        <div class="weather-details">
+                            <span class="weather-temp">15°C</span>
+                            <span class="weather-desc">clear sky</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-right">
+                    <div class="virtual-id">
+                        <span>Download Virtual ID Card</span>
+                    </div>
+                    <a href="id%20card.jpeg" download="Virtual_ID_Card.jpeg" class="download-btn"
+                        style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Download
+                        Now</a>
+                </div>
+            </div>
+
+            <!-- Three Column Section -->
+            <div class="three-col-section">
+                <!-- Important Message -->
+                <div class="card important-message">
+                    <h3 class="card-title">Important Message</h3>
+                    <div class="card-body">
+                        <div class="message-box">
+                            <p>1.Pending Documents: The status of Pending documents is as given below, you are required
+                                to submit the same in Block-B1 (Room No.208(General category) and Room No.
+                                204(Scholarship stds.) ) (Admission, MIG, Migration, CHAR/ CHR/ Character, DP/ Diploma,
+                                ORG/ Original)
+                                <br><strong>Document Remarks:NO DOCUMENTS PENDING</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Course & Attendance -->
+                <div class="card course-attendance">
+                    <h3 class="card-title">My Course & Attendance</h3>
+                    <div class="card-body">
+                        <p class="course-name">Bachelor of Engineering (Aerospace Engineering)-AS201</p>
+                        <table class="course-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Sem.</th>
+                                    <th>%</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Computational Fluid Dynamics (23ASH-351)</td>
+                                    <td>6</td>
+                                    <td>85</td>
+                                </tr>
+                                <tr>
+                                    <td>Aircraft Design Lab - II (23ASP-353)</td>
+                                    <td>6</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>FLIGHT MECHANICS (23AST-352)</td>
+                                    <td>6</td>
+                                    <td class="highlight-green">93.75</td>
+                                </tr>
+                                <tr>
+                                    <td>Hypersonic Aerodynamics (23AST-354)</td>
+                                    <td>6</td>
+                                    <td>86.67</td>
+                                </tr>
+                                <tr>
+                                    <td>Helicopter Aerodynamics (23AST-358)</td>
+                                    <td>6</td>
+                                    <td>86.67</td>
+                                </tr>
+                                <tr>
+                                    <td>Aircraft Maintenance and Repair (23AST-363)</td>
+                                    <td>6</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>Mathematics for Machine Learning (SMO-157)</td>
+                                    <td>6</td>
+                                    <td>80</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Announcements -->
+                <div class="card announcements">
+                    <h3 class="card-title">Announcements ( ALL )</h3>
+                    <div class="card-body">
+                        <div class="announcement-search">
+                            <input type="text" placeholder="Search Announcement">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="announcement-filter">
+                            <select>
+                                <option>ALL</option>
+                            </select>
+                        </div>
+                        <div class="announcement-item">
+                            <div class="announcement-header">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <h4>IEEE MANTHAN 6.0</h4>
+                            </div>
+                            <div class="announcement-badges">
+                                <span class="badge red"><i class="far fa-calendar"></i> 24 FEB 2026</span>
+                                <span class="badge green"><i class="far fa-clock"></i> 22:37:20</span>
+                            </div>
+                            <div class="announcement-content">
+                                <p>IFFE CUSE presents IEEE Manthan 6.0</p>
+                                <p>Bigger than ever. Stronger than before.</p>
+                                <p>IEEE Manthan 6.0 is not just a hiring process — it's a gateway to global
+                                    opportunities.</p>
+                                <p>This edition comes with a larger scale, sharper evaluations, and higher impact than
+                                    previous years, designed to identify the most passionate and capable minds.</p>
+                                <p>- Date: 26th – 27th February 2026</p>
+                                <p>- Time: 9:30 AM – 4:30 PM</p>
+                                <p>- Venue: S13 B1 Seminar Hall</p>
+                                <p>- Registration link: <a href="#">https://forms.gle/1SKHAv...</a></p>
+                                <p>- Open Positions:</p>
+                                <p class="positions-text">Chairperson | Vice Chairperson | Secretary | Joint Secretary |
+                                    Treasurer | Webmaster | PR Lead | Membership Executive | Travel & Grants Lead |
+                                    Media Team | Graphic Designer | Tech Lead | Core Team Lead | Volunteers</p>
+                                <p>By the students, for the students</p>
+                                <p>Where ambition meets action</p>
+                                <p>Step up. Stand out. Lead with IEEE.</p>
+                                <p>IEEE Manthan 6.0 — Not just roles, but leadership journeys.</p>
+                                <div class="announcement-banner">
+                                    <div class="banner-img">
+                                        <div class="banner-text">
+                                            <p>IEEE CHANDIGARH UNIVERSITY STUDENT BRANCH</p>
+                                            <h3>MANTHAN 6.0</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="three-col-section second-row">
+                <!-- Mentor Details -->
+                <div class="card mentor-details">
+                    <h3 class="card-title"><i class="fas fa-user-tie"></i> Mentor Details</h3>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Mentor Name:</strong> Moniya (E13448)</li>
+                            <li><strong>Email Id:</strong> moniya.e13448@cumail.in</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Upcoming Events -->
+                <div class="card upcoming-events">
+                    <h3 class="card-title">Upcoming Events</h3>
+                    <div class="card-body">
+                        <p class="no-events">No upcoming events</p>
+                    </div>
+                </div>
+
+                <!-- Job Alert -->
+                <div class="card job-alert">
+                    <h3 class="card-title">Job Alert</h3>
+                    <div class="card-body">
+                        <p class="no-events">No job alerts</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Row -->
+            <div class="queries-section">
+                <div class="card queries">
+                    <h3 class="card-title"><i class="fas fa-question-circle"></i> My Question Or Queries</h3>
+                    <div class="card-body">
+                        <table class="queries-table">
+                            <thead>
+                                <tr>
+                                    <th>Total</th>
+                                    <th>Closed</th>
+                                    <th>Open</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-left">
+                    <p>Chandigarh University, Gharuan, Mohali (Punjab)</p>
+                    <p>General Helpline No: 18002571800</p>
+                    <p>Email Id: studentcare@cumail.in</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#" class="report-bug">Report a Bug <i class="fas fa-bug"></i></a>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
