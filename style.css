@@ -77,18 +77,18 @@ ul {
 .search-bar {
     display: flex;
     align-items: center;
-    background: #fff;
-    border: 1px solid #d0d0d0;
-    border-radius: 4px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 25px;
     overflow: hidden;
 }
 
 .search-bar input {
     border: none;
     outline: none;
-    padding: 7px 14px;
+    padding: 10px 18px;
     flex: 1;
-    font-size: 12px;
+    font-size: 13px;
     color: #888;
     background: transparent;
 }
@@ -96,8 +96,7 @@ ul {
 .search-btn {
     background: transparent;
     border: none;
-    border-left: 1px solid #d0d0d0;
-    padding: 7px 12px;
+    padding: 10px 16px;
     cursor: pointer;
     color: #888;
 }
@@ -414,6 +413,15 @@ ul {
 
 .card-body {
     padding: 14px 16px;
+    overflow-x: auto;
+}
+
+/* ===== DASHBOARD GRID ===== */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
 }
 
 /* ===== THREE COLUMN SECTION ===== */
@@ -447,6 +455,7 @@ ul {
     width: 100%;
     border-collapse: collapse;
     font-size: 12px;
+    min-width: 500px;
 }
 
 .course-table thead {
@@ -500,6 +509,22 @@ ul {
     padding: 7px 10px;
     cursor: pointer;
     color: #888;
+}
+
+.announcement-top-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.announcement-top-row .announcement-search {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.announcement-top-row .announcement-filter {
+    flex: 1;
+    margin-bottom: 0;
 }
 
 .announcement-filter {
@@ -708,7 +733,9 @@ ul {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
-    .three-col-section {
+
+    .three-col-section,
+    .second-row {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -730,16 +757,13 @@ ul {
         margin-left: 0;
     }
 
-    .three-col-section {
+    .three-col-section,
+    .second-row {
         grid-template-columns: 1fr;
     }
 
     .announcements {
         grid-column: span 1;
-    }
-
-    .quick-links {
-        flex-direction: column;
     }
 
     .weather-bar {
@@ -754,5 +778,32 @@ ul {
 
     .header-center {
         display: none;
+    }
+
+    .user-info {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-right {
+        position: relative;
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-right .icon-btn:not(:last-child) {
+        display: none;
+    }
+
+    .user-profile {
+        margin-left: 0;
+        padding-left: 5px;
+        border-left: none;
     }
 }

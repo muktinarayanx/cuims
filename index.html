@@ -82,7 +82,9 @@
         <main class="content">
 
             <!-- Quick Link Cards -->
-            <div class="quick-links">
+            <div class="quick-links"
+                style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+                <!-- Row 1 -->
                 <div class="quick-card">
                     <div class="quick-card-text">
                         <h4>Important Links</h4>
@@ -110,6 +112,7 @@
                         <i class="fas fa-times-circle"></i>
                     </div>
                 </div>
+                <!-- Row 2 -->
                 <div class="quick-card cu-lms">
                     <div class="quick-card-text">
                         <h4>CU LMS</h4>
@@ -119,6 +122,7 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                 </div>
+                <div></div>
                 <div class="quick-card">
                     <div class="quick-card-text">
                         <h4>My University Email</h4>
@@ -130,47 +134,48 @@
                 </div>
             </div>
 
-            <!-- Weather Bar -->
-            <div class="weather-bar">
-                <div class="weather-left">
-                    <span class="weather-uni">CHANDIGARH UNIVERSITY<br><span
-                            style="font-size: 10px; opacity: 0.8; font-weight: 500;">WEATHER</span></span>
-                    <div class="weather-info">
-                        <i class="fas fa-cloud-moon weather-icon"></i>
-                        <div class="weather-details">
-                            <span class="weather-temp">15°C</span>
-                            <span class="weather-desc">clear sky</span>
+            <!-- Dashboard Grid (2 columns, row by row) -->
+            <div class="dashboard-grid">
+                <!-- Row 1: Weather Bar | Virtual ID Card -->
+                <div class="weather-bar" style="margin-bottom: 0;">
+                    <div class="weather-left" style="width: 100%; justify-content: space-between;">
+                        <span class="weather-uni">CHANDIGARH UNIVERSITY<br><span
+                                style="font-size: 10px; opacity: 0.8; font-weight: 500;">WEATHER</span></span>
+                        <div class="weather-info">
+                            <i class="fas fa-cloud-moon weather-icon"></i>
+                            <div class="weather-details">
+                                <span class="weather-temp">25°C</span>
+                                <span class="weather-desc">clear sky</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="weather-right">
-                    <div class="virtual-id">
-                        <span>Download Virtual ID Card</span>
+                <div class="weather-bar"
+                    style="margin-bottom: 0; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.08);">
+                    <div class="weather-right" style="width: 100%; justify-content: space-between;">
+                        <div class="virtual-id">
+                            <span style="color: #1a2b4c; font-weight: 600;">Download Virtual ID Card</span>
+                        </div>
+                        <a href="id%20card.jpeg" download="Virtual_ID_Card.jpeg" class="download-btn"
+                            style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Download
+                            Now</a>
                     </div>
-                    <a href="id%20card.jpeg" download="Virtual_ID_Card.jpeg" class="download-btn"
-                        style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Download
-                        Now</a>
                 </div>
-            </div>
 
-            <!-- Three Column Section -->
-            <div class="three-col-section">
-                <!-- Important Message -->
+                <!-- Row 2: Important Message | My Course & Attendance -->
                 <div class="card important-message">
                     <h3 class="card-title">Important Message</h3>
                     <div class="card-body">
                         <div class="message-box">
-                            <p>1.Pending Documents: The status of Pending documents is as given below, you are required
-                                to submit the same in Block-B1 (Room No.208(General category) and Room No.
-                                204(Scholarship stds.) ) (Admission, MIG, Migration, CHAR/ CHR/ Character, DP/ Diploma,
-                                ORG/ Original)
+                            <p>1.Pending Documents: The status of Pending documents is as given below, you are
+                                required to submit the same in Block-B1 (Room No.208(General category) and Room No.
+                                204(Scholarship stds.) ) (Admission, MIG, Migration, CHAR/ CHR/ Character, DP/
+                                Diploma, ORG/ Original)
                                 <br><strong>Document Remarks:NO DOCUMENTS PENDING</strong>
                             </p>
                         </div>
                     </div>
                 </div>
-
-                <!-- My Course & Attendance -->
                 <div class="card course-attendance">
                     <h3 class="card-title">My Course & Attendance</h3>
                     <div class="card-body">
@@ -224,64 +229,7 @@
                     </div>
                 </div>
 
-                <!-- Announcements -->
-                <div class="card announcements">
-                    <h3 class="card-title">Announcements ( ALL )</h3>
-                    <div class="card-body">
-                        <div class="announcement-search">
-                            <input type="text" placeholder="Search Announcement">
-                            <button><i class="fas fa-search"></i></button>
-                        </div>
-                        <div class="announcement-filter">
-                            <select>
-                                <option>ALL</option>
-                            </select>
-                        </div>
-                        <div class="announcement-item">
-                            <div class="announcement-header">
-                                <span class="star"><i class="fas fa-star"></i></span>
-                                <h4>IEEE MANTHAN 6.0</h4>
-                            </div>
-                            <div class="announcement-badges">
-                                <span class="badge red"><i class="far fa-calendar"></i> 24 FEB 2026</span>
-                                <span class="badge green"><i class="far fa-clock"></i> 22:37:20</span>
-                            </div>
-                            <div class="announcement-content">
-                                <p>IFFE CUSE presents IEEE Manthan 6.0</p>
-                                <p>Bigger than ever. Stronger than before.</p>
-                                <p>IEEE Manthan 6.0 is not just a hiring process — it's a gateway to global
-                                    opportunities.</p>
-                                <p>This edition comes with a larger scale, sharper evaluations, and higher impact than
-                                    previous years, designed to identify the most passionate and capable minds.</p>
-                                <p>- Date: 26th – 27th February 2026</p>
-                                <p>- Time: 9:30 AM – 4:30 PM</p>
-                                <p>- Venue: S13 B1 Seminar Hall</p>
-                                <p>- Registration link: <a href="#">https://forms.gle/1SKHAv...</a></p>
-                                <p>- Open Positions:</p>
-                                <p class="positions-text">Chairperson | Vice Chairperson | Secretary | Joint Secretary |
-                                    Treasurer | Webmaster | PR Lead | Membership Executive | Travel & Grants Lead |
-                                    Media Team | Graphic Designer | Tech Lead | Core Team Lead | Volunteers</p>
-                                <p>By the students, for the students</p>
-                                <p>Where ambition meets action</p>
-                                <p>Step up. Stand out. Lead with IEEE.</p>
-                                <p>IEEE Manthan 6.0 — Not just roles, but leadership journeys.</p>
-                                <div class="announcement-banner">
-                                    <div class="banner-img">
-                                        <div class="banner-text">
-                                            <p>IEEE CHANDIGARH UNIVERSITY STUDENT BRANCH</p>
-                                            <h3>MANTHAN 6.0</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Second Row -->
-            <div class="three-col-section second-row">
-                <!-- Mentor Details -->
+                <!-- Row 3: Mentor Details | Upcoming Events -->
                 <div class="card mentor-details">
                     <h3 class="card-title"><i class="fas fa-user-tie"></i> Mentor Details</h3>
                     <div class="card-body">
@@ -291,8 +239,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- Upcoming Events -->
                 <div class="card upcoming-events">
                     <h3 class="card-title">Upcoming Events</h3>
                     <div class="card-body">
@@ -300,17 +246,7 @@
                     </div>
                 </div>
 
-                <!-- Job Alert -->
-                <div class="card job-alert">
-                    <h3 class="card-title">Job Alert</h3>
-                    <div class="card-body">
-                        <p class="no-events">No job alerts</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Third Row -->
-            <div class="queries-section">
+                <!-- Row 4: My Questions | Job Alert -->
                 <div class="card queries">
                     <h3 class="card-title"><i class="fas fa-question-circle"></i> My Question Or Queries</h3>
                     <div class="card-body">
@@ -332,8 +268,69 @@
                         </table>
                     </div>
                 </div>
+                <div class="card job-alert">
+                    <h3 class="card-title">Job Alert</h3>
+                    <div class="card-body">
+                        <p class="no-events">No job alerts</p>
+                    </div>
+                </div>
             </div>
 
+            <!-- Announcements (Full Width) -->
+            <div class="card announcements" style="margin-bottom: 16px;">
+                <h3 class="card-title">Announcements ( ALL )</h3>
+                <div class="card-body">
+                    <div class="announcement-top-row">
+                        <div class="announcement-search">
+                            <input type="text" placeholder="Search Announcement">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="announcement-filter">
+                            <select>
+                                <option>ALL</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="announcement-header">
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <h4>IEEE MANTHAN 6.0</h4>
+                        </div>
+                        <div class="announcement-badges">
+                            <span class="badge red"><i class="far fa-calendar"></i> 24 FEB 2026</span>
+                            <span class="badge green"><i class="far fa-clock"></i> 22:37:20</span>
+                        </div>
+                        <div class="announcement-content">
+                            <p>IFFE CUSE presents IEEE Manthan 6.0</p>
+                            <p>Bigger than ever. Stronger than before.</p>
+                            <p>IEEE Manthan 6.0 is not just a hiring process — it's a gateway to global
+                                opportunities.</p>
+                            <p>This edition comes with a larger scale, sharper evaluations, and higher impact than
+                                previous years, designed to identify the most passionate and capable minds.</p>
+                            <p>- Date: 26th – 27th February 2026</p>
+                            <p>- Time: 9:30 AM – 4:30 PM</p>
+                            <p>- Venue: S13 B1 Seminar Hall</p>
+                            <p>- Registration link: <a href="#">https://forms.gle/1SKHAv...</a></p>
+                            <p>- Open Positions:</p>
+                            <p class="positions-text">Chairperson | Vice Chairperson | Secretary | Joint Secretary |
+                                Treasurer | Webmaster | PR Lead | Membership Executive | Travel & Grants Lead |
+                                Media Team | Graphic Designer | Tech Lead | Core Team Lead | Volunteers</p>
+                            <p>By the students, for the students</p>
+                            <p>Where ambition meets action</p>
+                            <p>Step up. Stand out. Lead with IEEE.</p>
+                            <p>IEEE Manthan 6.0 — Not just roles, but leadership journeys.</p>
+                            <div class="announcement-banner">
+                                <div class="banner-img">
+                                    <div class="banner-text">
+                                        <p>IEEE CHANDIGARH UNIVERSITY STUDENT BRANCH</p>
+                                        <h3>MANTHAN 6.0</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Footer -->
             <footer class="footer">
                 <div class="footer-left">
